@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.service.OrderServiceImplementationTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 6, Errors: 0, Skipped: 0, Time elapsed: 0.008 sec <<< FAILURE! - in com.revature.service.OrderServiceImplementationTest
+com.revature.service.OrderServiceImplementationTest.testGetOrdersByUser()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.ProductOrderRepository.findByUserId(java.lang.Integer)" because "this.orderRepository" is null
+	at com.revature.service.OrderServiceImplementationTest.testGetOrdersByUser(OrderServiceImplementationTest.java:88)
+
+com.revature.service.OrderServiceImplementationTest.testUpdateOrderStatus()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.ProductOrderRepository.findById(Object)" because "this.orderRepository" is null
+	at com.revature.service.OrderServiceImplementationTest.testUpdateOrderStatus(OrderServiceImplementationTest.java:103)
+
+com.revature.service.OrderServiceImplementationTest.testGetAllOrdersPagination()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.ProductOrderRepository.findAll(org.springframework.data.domain.Pageable)" because "this.orderRepository" is null
+	at com.revature.service.OrderServiceImplementationTest.testGetAllOrdersPagination(OrderServiceImplementationTest.java:129)
+
+com.revature.service.OrderServiceImplementationTest.testGetOrdersByOrderId()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.ProductOrderRepository.findByOrderId(String)" because "this.orderRepository" is null
+	at com.revature.service.OrderServiceImplementationTest.testGetOrdersByOrderId(OrderServiceImplementationTest.java:141)
+
+com.revature.service.OrderServiceImplementationTest.testGetAllOrders()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.ProductOrderRepository.findAll()" because "this.orderRepository" is null
+	at com.revature.service.OrderServiceImplementationTest.testGetAllOrders(OrderServiceImplementationTest.java:117)
+
+com.revature.service.OrderServiceImplementationTest.testSaveOrder()  Time elapsed: 0.007 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CartRepository.findByUserId(java.lang.Integer)" because "this.cartRepository" is null
+	at com.revature.service.OrderServiceImplementationTest.testSaveOrder(OrderServiceImplementationTest.java:62)
+

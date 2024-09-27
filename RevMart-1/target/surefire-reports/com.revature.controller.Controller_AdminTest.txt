@@ -1,0 +1,95 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.controller.Controller_AdminTest
+-------------------------------------------------------------------------------
+Tests run: 18, Failures: 18, Errors: 0, Skipped: 0, Time elapsed: 2.625 sec <<< FAILURE! - in com.revature.controller.Controller_AdminTest
+com.revature.controller.Controller_AdminTest.testSaveCategory_InternalServerError()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.existCategory(String)" because "this.categoryService" is null
+	at com.revature.controller.Controller_AdminTest.testSaveCategory_InternalServerError(Controller_AdminTest.java:143)
+
+com.revature.controller.Controller_AdminTest.testUpdateUserAccountStatus_Failure()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.UserService.updateAccountStatus(java.lang.Integer, java.lang.Boolean)" because "this.userService" is null
+	at com.revature.controller.Controller_AdminTest.testUpdateUserAccountStatus_Failure(Controller_AdminTest.java:395)
+
+com.revature.controller.Controller_AdminTest.testUpdateUserAccountStatus_Success()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.UserService.updateAccountStatus(java.lang.Integer, java.lang.Boolean)" because "this.userService" is null
+	at com.revature.controller.Controller_AdminTest.testUpdateUserAccountStatus_Success(Controller_AdminTest.java:376)
+
+com.revature.controller.Controller_AdminTest.testSaveCategory_CategoryAlreadyExists()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.existCategory(String)" because "this.categoryService" is null
+	at com.revature.controller.Controller_AdminTest.testSaveCategory_CategoryAlreadyExists(Controller_AdminTest.java:124)
+
+com.revature.controller.Controller_AdminTest.testSaveProduct_Failure()  Time elapsed: 1.935 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.saveProduct(com.revature.model.Product)" because "this.productService" is null
+	at com.revature.controller.Controller_AdminTest.testSaveProduct_Failure(Controller_AdminTest.java:226)
+
+com.revature.controller.Controller_AdminTest.testDeleteCategory_Success()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.deleteCategory(int)" because "this.categoryService" is null
+	at com.revature.controller.Controller_AdminTest.testDeleteCategory_Success(Controller_AdminTest.java:158)
+
+com.revature.controller.Controller_AdminTest.testUpdateProduct_Success()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.updateProduct(com.revature.model.Product, org.springframework.web.multipart.MultipartFile)" because "this.productService" is null
+	at com.revature.controller.Controller_AdminTest.testUpdateProduct_Success(Controller_AdminTest.java:300)
+
+com.revature.controller.Controller_AdminTest.testDeleteCategory_Failure()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.deleteCategory(int)" because "this.categoryService" is null
+	at com.revature.controller.Controller_AdminTest.testDeleteCategory_Failure(Controller_AdminTest.java:172)
+
+com.revature.controller.Controller_AdminTest.testDeleteProduct_Failure()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.deleteProduct(java.lang.Integer)" because "this.productService" is null
+	at com.revature.controller.Controller_AdminTest.testDeleteProduct_Failure(Controller_AdminTest.java:258)
+
+com.revature.controller.Controller_AdminTest.testLoadAddProduct_Success()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.getAllCategory()" because "this.categoryService" is null
+	at com.revature.controller.Controller_AdminTest.testLoadAddProduct_Success(Controller_AdminTest.java:89)
+
+com.revature.controller.Controller_AdminTest.testGetAllUsers_RoleAdmin()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.UserService.getUsers(String)" because "this.userService" is null
+	at com.revature.controller.Controller_AdminTest.testGetAllUsers_RoleAdmin(Controller_AdminTest.java:356)
+
+com.revature.controller.Controller_AdminTest.testSaveProduct_Success()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.saveProduct(com.revature.model.Product)" because "this.productService" is null
+	at com.revature.controller.Controller_AdminTest.testSaveProduct_Success(Controller_AdminTest.java:195)
+
+com.revature.controller.Controller_AdminTest.testDeleteProduct_Success()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.deleteProduct(java.lang.Integer)" because "this.productService" is null
+	at com.revature.controller.Controller_AdminTest.testDeleteProduct_Success(Controller_AdminTest.java:242)
+
+com.revature.controller.Controller_AdminTest.testGetAllUsers_RoleUser()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.UserService.getUsers(String)" because "this.userService" is null
+	at com.revature.controller.Controller_AdminTest.testGetAllUsers_RoleUser(Controller_AdminTest.java:338)
+
+com.revature.controller.Controller_AdminTest.testGetAllOrders()  Time elapsed: 0.562 sec  <<< FAILURE!
+org.mockito.exceptions.misusing.InvalidUseOfMatchersException: 
+Misplaced or misused argument matcher detected here:
+-> at com.revature.controller.Controller_AdminTest.testSaveProduct_Failure(Controller_AdminTest.java:226)
+-> at com.revature.controller.Controller_AdminTest.testUpdateProduct_Success(Controller_AdminTest.java:300)
+-> at com.revature.controller.Controller_AdminTest.testUpdateProduct_Success(Controller_AdminTest.java:300)
+-> at com.revature.controller.Controller_AdminTest.testSaveProduct_Success(Controller_AdminTest.java:195)
+You cannot use argument matchers outside of verification or stubbing.
+Examples of correct usage of argument matchers:
+    when(mock.get(anyInt())).thenReturn(null);
+    doThrow(new RuntimeException()).when(mock).someVoidMethod(any());
+    verify(mock).someMethod(contains("foo"))
+This message may appear after an NullPointerException if the last matcher is returning an object 
+like any() but the stubbed method signature expect a primitive argument, in this case,
+use primitive alternatives.
+    when(mock.get(any())); // bad use, will raise NPE
+    when(mock.get(anyInt())); // correct usage use
+Also, this error might show up because you use argument matchers with methods that cannot be mocked.
+Following methods *cannot* be stubbed/verified: final/private/equals()/hashCode().
+Mocking methods declared on non-public parent classes is not supported.
+
+	at com.revature.controller.Controller_AdminTest.testGetAllOrders(Controller_AdminTest.java:412)
+
+com.revature.controller.Controller_AdminTest.testEditProduct()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.getProductById(java.lang.Integer)" because "this.productService" is null
+	at com.revature.controller.Controller_AdminTest.testEditProduct(Controller_AdminTest.java:275)
+
+com.revature.controller.Controller_AdminTest.testLoadAddProduct_NoCategories()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.getAllCategory()" because "this.categoryService" is null
+	at com.revature.controller.Controller_AdminTest.testLoadAddProduct_NoCategories(Controller_AdminTest.java:103)
+
+com.revature.controller.Controller_AdminTest.testUpdateProduct_InvalidDiscount()  Time elapsed: 0.12 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.controller.Controller_Admin.updateProduct(com.revature.model.Product, org.springframework.web.multipart.MultipartFile, jakarta.servlet.http.HttpSession, org.springframework.ui.Model)" because "this.adminController" is null
+	at com.revature.controller.Controller_AdminTest.testUpdateProduct_InvalidDiscount(Controller_AdminTest.java:326)
+

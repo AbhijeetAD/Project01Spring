@@ -1,0 +1,40 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.service.CategoryServiceImplementationTest
+-------------------------------------------------------------------------------
+Tests run: 9, Failures: 9, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec <<< FAILURE! - in com.revature.service.CategoryServiceImplementationTest
+com.revature.service.CategoryServiceImplementationTest.testGetCategoryById()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findById(Object)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testGetCategoryById(CategoryServiceImplementationTest.java:101)
+
+com.revature.service.CategoryServiceImplementationTest.testGetAllActiveCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findByIsActiveTrue()" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testGetAllActiveCategory(CategoryServiceImplementationTest.java:123)
+
+com.revature.service.CategoryServiceImplementationTest.testDeleteCategoryNotFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findById(Object)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testDeleteCategoryNotFound(CategoryServiceImplementationTest.java:88)
+
+com.revature.service.CategoryServiceImplementationTest.testGetAllCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findAll()" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testGetAllCategory(CategoryServiceImplementationTest.java:52)
+
+com.revature.service.CategoryServiceImplementationTest.testExistCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.existsByName(String)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testExistCategory(CategoryServiceImplementationTest.java:63)
+
+com.revature.service.CategoryServiceImplementationTest.testDeleteCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findById(Object)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testDeleteCategory(CategoryServiceImplementationTest.java:75)
+
+com.revature.service.CategoryServiceImplementationTest.testSaveCategory()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.save(Object)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testSaveCategory(CategoryServiceImplementationTest.java:41)
+
+com.revature.service.CategoryServiceImplementationTest.testGetCategoryByIdNotFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findById(Object)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testGetCategoryByIdNotFound(CategoryServiceImplementationTest.java:112)
+
+com.revature.service.CategoryServiceImplementationTest.testGetAllCategorPagination()  Time elapsed: 0.011 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.repository.CategoryRepository.findAll(org.springframework.data.domain.Pageable)" because "this.categoryRepository" is null
+	at com.revature.service.CategoryServiceImplementationTest.testGetAllCategorPagination(CategoryServiceImplementationTest.java:135)
+

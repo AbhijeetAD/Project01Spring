@@ -1,0 +1,32 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.controller.Controller_HomeTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 7, Errors: 0, Skipped: 0, Time elapsed: 0.237 sec <<< FAILURE! - in com.revature.controller.Controller_HomeTest
+com.revature.controller.Controller_HomeTest.testSaveReview_Failure_ProductOrUserNotFound()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.getProductById(java.lang.Integer)" because "this.productService" is null
+	at com.revature.controller.Controller_HomeTest.testSaveReview_Failure_ProductOrUserNotFound(Controller_HomeTest.java:218)
+
+com.revature.controller.Controller_HomeTest.testIndex_Failure_EmptyCategoriesAndProducts()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.getAllActiveCategory()" because "this.categoryService" is null
+	at com.revature.controller.Controller_HomeTest.testIndex_Failure_EmptyCategoriesAndProducts(Controller_HomeTest.java:173)
+
+com.revature.controller.Controller_HomeTest.testProcessForgotPassword_InvalidEmail()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.UserService.getUserByEmail(String)" because "this.userService" is null
+	at com.revature.controller.Controller_HomeTest.testProcessForgotPassword_InvalidEmail(Controller_HomeTest.java:241)
+
+com.revature.controller.Controller_HomeTest.testGetUserDetails_Success()  Time elapsed: 0.234 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.UserService.getUserByEmail(String)" because "this.userService" is null
+	at com.revature.controller.Controller_HomeTest.testGetUserDetails_Success(Controller_HomeTest.java:90)
+
+com.revature.controller.Controller_HomeTest.testGetUserDetails_Failure()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.getAllActiveCategory()" because "this.categoryService" is null
+	at com.revature.controller.Controller_HomeTest.testGetUserDetails_Failure(Controller_HomeTest.java:118)
+
+com.revature.controller.Controller_HomeTest.testSaveReview_Success()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.ProductService.getProductById(java.lang.Integer)" because "this.productService" is null
+	at com.revature.controller.Controller_HomeTest.testSaveReview_Success(Controller_HomeTest.java:201)
+
+com.revature.controller.Controller_HomeTest.testIndex_Success()  Time elapsed: 0.001 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "com.revature.service.CategoryService.getAllActiveCategory()" because "this.categoryService" is null
+	at com.revature.controller.Controller_HomeTest.testIndex_Success(Controller_HomeTest.java:144)
+

@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.revature.config.AuthSuccessHandlerImplTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0.019 sec <<< FAILURE! - in com.revature.config.AuthSuccessHandlerImplTest
+com.revature.config.AuthSuccessHandlerImplTest.testOnAuthenticationSuccessAdmin()  Time elapsed: 0.018 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "this.authentication" is null
+	at com.revature.config.AuthSuccessHandlerImplTest.testOnAuthenticationSuccessAdmin(AuthSuccessHandlerImplTest.java:48)
+
+com.revature.config.AuthSuccessHandlerImplTest.testOnAuthenticationSuccessUser()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException: Cannot invoke "org.springframework.security.core.Authentication.getName()" because "this.authentication" is null
+	at com.revature.config.AuthSuccessHandlerImplTest.testOnAuthenticationSuccessUser(AuthSuccessHandlerImplTest.java:66)
+
